@@ -26,6 +26,8 @@ const Navigation = () => {
     { label: 'Courses', id: 'courses' },
     { label: 'Pathways', id: 'pathways' },
     { label: 'Business', id: 'business' },
+    { label: 'Technical Director', id: 'technical-director' },
+    { label: 'Reviews', id: 'reviews' },
     { label: 'Contact', id: 'contact' },
   ];
 

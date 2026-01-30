@@ -15,6 +15,7 @@ import WhyMiraiSection from './sections/WhyMiraiSection';
 import PathwaysSection from './sections/PathwaysSection';
 import ReviewsSection from './sections/ReviewsSection';
 import ContactSection from './sections/ContactSection';
+import TechnicalDirectorSection from './sections/TechnicalDirectorSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,7 +88,7 @@ function App() {
       <main className="relative">
         {/* Section 1: Hero */}
         <HeroSection />
-        
+
         {/* Section 2: Play AI */}
         <PlayAISection />
         
@@ -109,10 +110,13 @@ function App() {
         {/* Section 8: Age Pathways */}
         <PathwaysSection />
 
-        {/* Section 9: Customer Reviews */}
+        {/* Section 9: Technical Director */}
+        <TechnicalDirectorSection />
+
+        {/* Section 10: Customer Reviews */}
         <ReviewsSection />
 
-        {/* Section 10: Contact */}
+        {/* Section 11: Contact */}
         <ContactSection />
       </main>
     </div>
