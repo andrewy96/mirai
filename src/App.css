@@ -1,0 +1,106 @@
+/* App-specific styles */
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure sections stack properly */
+.section-pinned {
+  will-change: transform;
+}
+
+/* Glass card hover effects */
+.glass-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover states */
+.btn-primary:active,
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+
+/* Image loading placeholder */
+img {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+}
+
+/* Form focus states */
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px rgba(255, 106, 61, 0.15);
+}
+
+/* Mobile optimizations */
+@media (max-width: 1023px) {
+  .section-pinned {
+    min-height: auto;
+    height: auto;
+  }
+  
+  .gradient-orb {
+    filter: blur(40px);
+    opacity: 0.2 !important;
+  }
+  
+  /* Ensure content is visible on mobile */
+  .glass-card {
+    backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.04);
+  }
+  
+  /* Better touch targets */
+  .btn-primary,
+  .btn-secondary {
+    min-height: 44px;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gradient-orb {
+    filter: blur(60px);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Custom selection color for off-white sections */
+.bg-mirai-offwhite ::selection {
+  background: rgba(255, 106, 61, 0.2);
+  color: #0B0F19;
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Ensure text is readable on small screens */
+@media (max-width: 380px) {
+  .glass-pill {
+    font-size: 9px;
+    padding: 6px 12px;
+  }
+  
+  h1, h2, h3 {
+    word-break: break-word;
+  }
+}
