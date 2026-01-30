@@ -13,6 +13,7 @@ import CourseCardsSection from './sections/CourseCardsSection';
 import BusinessSection from './sections/BusinessSection';
 import WhyMiraiSection from './sections/WhyMiraiSection';
 import PathwaysSection from './sections/PathwaysSection';
+import ReviewsSection from './sections/ReviewsSection';
 import ContactSection from './sections/ContactSection';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -107,8 +108,11 @@ function App() {
         
         {/* Section 8: Age Pathways */}
         <PathwaysSection />
-        
-        {/* Section 9: Contact */}
+
+        {/* Section 9: Customer Reviews */}
+        <ReviewsSection />
+
+        {/* Section 10: Contact */}
         <ContactSection />
       </main>
     </div>

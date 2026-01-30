@@ -186,7 +186,7 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-white text-sm"
+                      className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-navy text-sm placeholder:text-gray-400"
                       placeholder="Your full name"
                     />
                   </div>
@@ -202,7 +202,7 @@ const ContactSection = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-white text-sm"
+                        className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-navy text-sm placeholder:text-gray-400"
                         placeholder="you@example.com"
                       />
                     </div>
@@ -215,7 +215,7 @@ const ContactSection = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-white text-sm"
+                        className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-navy text-sm placeholder:text-gray-400"
                         placeholder="+60 XX-XXX XXXX"
                       />
                     </div>
@@ -230,7 +230,7 @@ const ContactSection = () => {
                       value={formData.enrollingFor}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-white text-sm bg-white"
+                      className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-navy text-sm bg-white"
                     >
                       <option value="">Select an option</option>
                       <option value="myself">Myself</option>
@@ -249,7 +249,7 @@ const ContactSection = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows={3}
-                      className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-white text-sm resize-none"
+                      className="w-full px-3 lg:px-4 py-2.5 lg:py-3 rounded-xl border border-gray-200 focus:border-mirai-coral focus:ring-2 focus:ring-mirai-coral/20 outline-none transition-all text-mirai-navy text-sm resize-none placeholder:text-gray-400"
                       placeholder="Tell us more about your goals..."
                     />
                   </div>
